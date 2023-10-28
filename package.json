@@ -1,5 +1,5 @@
 {
-	"name": "identity",
+	"name": "@amanr28/identity",
 	"version": "1.0.0",
 	"description": "Connect SSO to DID",
 	"main": "index.js",
@@ -10,7 +10,8 @@
 	"license": "MIT",
 	"files": [
 		"index.js",
-		"lib/"
+		"lib/",
+		"README.md"
 	],
 	"dependencies": {
 		"ethers": "^6.8.0"
