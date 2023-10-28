@@ -7,16 +7,19 @@ const app = express();
 const HOST = "http://localhost:3001/";
 const SITE = "localhost";
 const CALLBACK = "http://localhost:3030/callback";
+const ALCHEMY =
+	"https://eth-sepolia.g.alchemy.com/v2/KXMjMNaCDSmH0KcMcaSSoYu1w7Dua2-U";
 
 const VcInfo = [
 	{
-		nodeId: 6,
+		nodeId: 1,
 		expiry: 60 * 60 * 1000,
 		score: 1,
 	},
 ];
 
 const identity = new Identity({
+	alchemy: ALCHEMY,
 	host: HOST,
 	site: SITE,
 	callback: CALLBACK,
